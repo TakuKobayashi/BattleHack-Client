@@ -13,7 +13,7 @@ public class UniPainter : MonoBehaviour
         texture = transform.GetComponent<GUITexture>().texture as Texture2D;
         if (texture == null)
         {
-            texture = new Texture2D(256, 256);
+            texture = new Texture2D(350, 400);
             transform.GetComponent<GUITexture>().texture = texture;
         }
     }
