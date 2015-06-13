@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System;
-
-using UnityEditor;
 using System.IO;
 using System.Collections;
 
