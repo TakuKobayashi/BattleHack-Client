@@ -16,6 +16,7 @@ public class top : MonoBehaviour {
 
 	public void onClick(){
 		UserModel.Login ((UserModel user) => {
+			GameController.Instance.User = user;
 		});
 	}
 
