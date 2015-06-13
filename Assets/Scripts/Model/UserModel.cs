@@ -18,6 +18,7 @@ public class UserModel
 		HTTP.Instance.Request(HTTP.rootUrl + ResourcePath + "/create", HTTP.Method.GET, param,(string response) => {
 			Debug.Log ("success");
 			UserModel user = JsonMapper.ToObject<UserModel>(response);
+			PlayerPrefs.SetString("authToken", user.authToken);
 			if(onSuccess != null) onSuccess(user);			
 		});
 	}
