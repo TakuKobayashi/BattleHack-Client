@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class top : MonoBehaviour {
 
@@ -14,7 +15,8 @@ public class top : MonoBehaviour {
 	}
 
 	public void onClick(){
-
+		UserModel.Login ((UserModel user) => {
+		});
 	}
 
 }
