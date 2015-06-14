@@ -27,13 +27,14 @@ private string AnswerText;
 		Debug.Log ("click");
 		Dictionary<string, string> param = new Dictionary<string, string> ();
 		//TODO Settings
-		param.Add ("roomUserId", "1");
-		param.Add ("answer", "hogehoge");
+		param.Add ("roomUserId", GameController.Instance.RoomUser.id);
+		//回答
+		string message = TextBox.GetComponent<InputField>().text;
+		param.Add ("answer", message);
 		HTTP.Instance.Request (HTTP.rootUrl + "room/answer", HTTP.Method.GET, param,(string response) => {
 			Debug.Log ("success");
 		});
-        //回答
-        string message = TextBox.GetComponent<InputField>().text;
+        
         // シーン遷移
         Application.LoadLevel("result");
     }
