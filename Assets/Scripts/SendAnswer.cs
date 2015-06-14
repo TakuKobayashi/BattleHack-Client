@@ -9,12 +9,13 @@ public class SendAnswer : MonoBehaviour {
 
 public GameObject TextBox;
 private string AnswerText;
+	private string image;
 
 	// Use this for initialization
 	void Start () {
-		
-		
-	
+		Debug.LogError (GameController.Instance.RoomUser.prev.imagePath);
+		image = GameController.Instance.RoomUser.prev.imagePath;
+		byte [] bs = System.Convert.FromBase64String(image);
 	}
 	
 	// Update is called once per frame

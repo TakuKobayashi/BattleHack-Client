@@ -20,7 +20,9 @@ public class top : MonoBehaviour {
 			RoomUserModel.Join((RoomUserModel roomUser) =>{
 				//TODO devide Scene
 				GameController.Instance.RoomUser = roomUser;
-				Debug.LogError(roomUser.id);
+				Debug.LogError("id:"+roomUser.id);
+				Debug.LogError("answerFlag:"+(roomUser.answerFlag));
+				Debug.LogError("count:"+roomUser.drawingCount);
 				if(roomUser.answerFlag){
 					Application.LoadLevel("answor");
 				}else{
