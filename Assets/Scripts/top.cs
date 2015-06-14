@@ -19,7 +19,12 @@ public class top : MonoBehaviour {
 			GameController.Instance.User = user;
 			RoomUserModel.Join((RoomUserModel roomUser) =>{
 				//TODO devide Scene
-
+				GameController.Instance.RoomUser = roomUser;
+				if(roomUser.answerFlag){
+					Application.LoadLevel("paint");
+				}else{
+					Application.LoadLevel("answor");
+				}
 			});
 		});
 	}
