@@ -21,9 +21,9 @@ public class top : MonoBehaviour {
 				//TODO devide Scene
 				GameController.Instance.RoomUser = roomUser;
 				if(roomUser.answerFlag){
-					Application.LoadLevel("paint");
-				}else{
 					Application.LoadLevel("answor");
+				}else{
+					Application.LoadLevel("paint");
 				}
 			});
 		});
