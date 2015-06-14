@@ -27,7 +27,7 @@ private string AnswerText;
 		Debug.Log ("click");
 		Dictionary<string, string> param = new Dictionary<string, string> ();
 		//TODO Settings
-		param.Add ("roomUserId", GameController.Instance.RoomUser.id);
+		param.Add ("roomUserId", GameController.Instance.RoomUser.id.ToString());
 		//回答
 		string message = TextBox.GetComponent<InputField>().text;
 		param.Add ("answer", message);
