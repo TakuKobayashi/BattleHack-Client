@@ -12,6 +12,7 @@ public class RoomUserModel
 	public int drawingCount;
 	public bool answerFlag;
 	public PrevResult prev;
+	public int repeatNumber;
 
 	public struct PrevResult{
 		public string answerWord;
