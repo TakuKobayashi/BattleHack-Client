@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+
 
 public class SendAnswer : MonoBehaviour {
 
@@ -30,6 +32,8 @@ private string AnswerText;
 		HTTP.Instance.Request (HTTP.rootUrl + "room/answer", HTTP.Method.GET, param,(string response) => {
 			Debug.Log ("success");
 		});
+        //回答
+        string message = TextBox.GetComponent<InputField>().text;
         // シーン遷移
         Application.LoadLevel("result");
     }
