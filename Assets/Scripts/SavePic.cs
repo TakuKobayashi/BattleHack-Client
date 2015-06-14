@@ -27,7 +27,7 @@ public class SavePic : MonoBehaviour {
         File.WriteAllBytes("./tmp.png", pngData);
 
         // シーン遷移
-        Application.LoadLevel("answor");
+        Application.LoadLevel("result");
     }
 
 

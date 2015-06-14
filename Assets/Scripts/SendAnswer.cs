@@ -30,6 +30,8 @@ private string AnswerText;
 		HTTP.Instance.Request (HTTP.rootUrl + "room/answer", HTTP.Method.GET, param,(string response) => {
 			Debug.Log ("success");
 		});
+        // シーン遷移
+        Application.LoadLevel("result");
     }
 	
 	
