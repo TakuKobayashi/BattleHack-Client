@@ -2,19 +2,22 @@
 using System;
 using System.IO;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SavePic : MonoBehaviour {
     
     public GameObject tempTexture;
+	public GameController gameController;
+	public Text text;
 
 	// Use this for initialization
 	void Start () {
-	
+		text.text = gameController.RoomUser.title;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
     

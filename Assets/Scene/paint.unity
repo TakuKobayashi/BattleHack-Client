@@ -221,6 +221,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec598076f8af8452286d117a8ff0e821, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &436155004 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11456096, guid: ec598076f8af8452286d117a8ff0e821,
+    type: 2}
+  m_PrefabInternal: {fileID: 436155003}
+  m_Script: {fileID: 11500000, guid: e86801be53ffe42d59a777636203b363, type: 3}
 --- !u!1001 &679056681
 Prefab:
   m_ObjectHideFlags: 0
@@ -274,7 +280,6 @@ GameObject:
   - 222: {fileID: 691889100}
   - 114: {fileID: 691889099}
   - 114: {fileID: 691889098}
-  - 114: {fileID: 691889101}
   - 114: {fileID: 691889102}
   m_Layer: 5
   m_Name: Button
@@ -340,7 +345,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 691889101}
+      - m_Target: {fileID: 0}
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -380,17 +385,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 691889096}
---- !u!114 &691889101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 691889096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3a8b27c0c37c84d9680e1a298c6e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &691889102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,6 +397,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempTexture: {fileID: 1539348284}
+  gameController: {fileID: 436155004}
+  text: {fileID: 1493245201}
 --- !u!1 &834298848
 GameObject:
   m_ObjectHideFlags: 0
