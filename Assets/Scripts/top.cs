@@ -17,6 +17,10 @@ public class top : MonoBehaviour {
 	public void onClick(){
 		UserModel.Login ((UserModel user) => {
 			GameController.Instance.User = user;
+			RoomUserModel.Join((RoomUserModel roomUser) =>{
+				//TODO devide Scene
+
+			});
 		});
 	}
 
